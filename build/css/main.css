@@ -1,6 +1,8 @@
 body, html {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
+	padding: 0;
+	margin: 0;
 }
 
 div.container {
@@ -15,28 +17,33 @@ div.container {
 }
 
 .menu-top {
-	padding-top: 10px;
-	padding-bottom: 10px;
+ 	padding-top: 15px;
+	padding-bottom: 15px; 
 	color: #6b737a;
-	display:flex;
-	flex-direction: row;
-	justify-content: space-between;
-
 }
 
-.menu a, .menu a:hover {
-	color: #6b737a;
+.menu {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	margin: 0;
+}
+
+.menu li {
 	margin-right: 70px;
 }
+.menu a, .menu a:hover {
+	color: #6b737a;
+	
+}
 .vk {
-	margin-right: 45px;
 }
 .vk a, .vk a:hover {
 	color: #6b737a;
-	position: relative;
+
 }
 
-.vk a::before {
+ .vk a::before {
 	content:'';
 	float: left;
  margin: 0 10px 0 0;
@@ -44,9 +51,9 @@ div.container {
 	background: url(../img/icon-vk.png) no-repeat;
 	width: 24px;
 	height: 24px;
-	left: -34px;
+	left: -20px;
 	top:-5px;
-}
+} 
 
 .wrap-logo {
 	padding-top: 18px;
