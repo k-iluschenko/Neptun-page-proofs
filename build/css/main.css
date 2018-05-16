@@ -6,8 +6,8 @@ body, html {
 }
 
 div.container {
-	border-left: 1px solid #000;
-	border-right: 1px solid #000;
+	/* border-left: 1px solid #000;
+	border-right: 1px solid #000; */
 	padding-right: 0;
 	padding-left: 0;
 }
@@ -17,8 +17,8 @@ div.container {
 }
 
 .menu-top {
- 	padding-top: 15px;
-	padding-bottom: 15px; 
+ 	padding-top: 10px;
+	padding-bottom: 14px; 
 	color: #6b737a;
 }
 
@@ -32,18 +32,21 @@ div.container {
 .menu li {
 	margin-right: 70px;
 }
-.menu a, .menu a:hover {
+.menu a, .menu a:hover, .vk a, .vk a:hover {
 	color: #6b737a;
+	text-decoration: none;
 	
 }
+
+
+.menu a:hover, .vk a:hover {
+	text-decoration: underline;
+}
+
 .vk {
+	margin-right: 13px;
 }
-.vk a, .vk a:hover {
-	color: #6b737a;
-
-}
-
- .vk a::before {
+.vk a::before {
 	content:'';
 	float: left;
  margin: 0 10px 0 0;
@@ -52,7 +55,7 @@ div.container {
 	width: 24px;
 	height: 24px;
 	left: -20px;
-	top:-5px;
+	top:-2px;
 } 
 
 .wrap-logo {
@@ -67,6 +70,7 @@ div.container {
 
 .schema span {
 	position: relative;
+	font-size: 16px;
 }
 
 .schema span::before {
@@ -93,24 +97,45 @@ div.container {
 	margin: 0;
 }
 
+.order {
+	padding: 10px 40px;
+	background: #06356d;
+	border-radius: 5px;
+}
+
 .wrap-menu {
-	min-height: 45px;
 	background-color: #052b58;
 	text-transform: uppercase;
-	
-
 }
-.wrap-menu a, .wrap-menu a:hover {
-	display: inline-block;
+
+.menu-nav {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	margin: 0;
+	font-size: 0;
+	letter-spacing: 0;
+
+		flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu-nav li {
+	/* display: inline-block; */
+	font-size: 14px
+}
+
+.menu-nav a, .menu-nav a:hover {
 	color: #fff;
 	text-decoration: none;
-	line-height: 45px;
-	padding-left: 30px;
-	padding-right: 30px;
-	margin-right: 15px;
+ 	line-height: 45px;
+padding-left: 30px;
+padding-right: 30px;
+
 }
 
-.wrap-menu a:hover {
+.menu-nav li:hover {
 	background-color: #06356d;
 
 }
@@ -120,17 +145,30 @@ div.container {
 	background: url(../img/slider-1.jpg);
 }
 
+.main-header {
+	text-align: center;
+}
 .main {
-	min-height: 690px;
+	text-align: center;
 }
 .main div{
 	display: inline-block;
 	vertical-align: bottom;
+	width: 25%;
+	margin: 20px;
+	font-size: 0;
+	text-align: center;
+}
+.main div p {
+	font-size: 13px
 }
 
 .halls {
 	min-height: 600px;
 	background-color: #efefef;
+}
+.halls-header {
+	text-align: center;
 }
 
 .pool {
