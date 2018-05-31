@@ -250,32 +250,30 @@ div.container {
 	min-height: 600px;
 	background-color: #efefef;
 }
+
 .halls-header {
 	text-align: center;
 }
 
-.halls-col {
+.halls-col, .pool-col  {
 	padding: 0;
 	margin-bottom: 80px;
 }
 
-.pool {
-	min-height: 600px;
+.pool-col {
+	margin-bottom: 50px;
 }
 
-.other--services {
-	min-height: 355px;
-}
 
-.halls-item {
+.halls-item, .pool-item  {
 	padding-right: 15px;
 }
 
-.halls-item-img {
+.halls-item-img, .pool-item-img{
 	position: relative;
 }
 
-.hall-title {
+.hall-title, .pool-title{
 	display: block;
 	height: 50px;
 	background-color: rgba(0, 0, 0, 0.7);
@@ -288,18 +286,18 @@ div.container {
 }
 
 
-.hall-title:hover {
+.hall-title:hover, .pool-title:hover {
 	cursor: pointer;
 }
 
-.hall-title span {
+.hall-title span, .pool-title span {
 	line-height: 50px;
 	color: #efefef;
 	font-size: 16px;
 	font-weight: 600;
 }
 
-.hall-title i {
+.hall-title i,  .pool-title i{
 	line-height: 50px;
 	position: absolute;
 	right: 0;
@@ -320,26 +318,79 @@ div.container {
       -moz-osx-font-smoothing: grayscale;
 }
 
-.halls-item-info {
+.halls-item-info, .pool-item-info  {
 	color: #858585;
-	font-weight: 700;
+	font-weight: 600;
 	text-align: center;
 	vertical-align: top;
+
+
+}
+
+
+
+.pool-item-info {
+	color: #fff;
 }
 
 .about-item {
 	display: inline-block;
 	padding-top: 30px;
 	width: 35%;
-	line-height: 16px;
+	line-height: 18px;
 	font-size: 16px;
 }
 
-.hall-info {
+.hall-info, .pool-info {
 	font-size: 56px;
 
 }
 
+.halls-item-info ul {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 0;
+	letter-spacing: 0;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.th {
+	padding-top: 30px;
+	color: #3f4448;
+	font-weight: 700;
+	font-size: 16px;
+	padding-bottom: 10px;
+}
+.td {
+
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.left {
+	text-align: left;
+}
+
+
+.pool {
+	min-height: 600px;
+}
+
+
+
+
+.other--services {
+	min-height: 355px;
+}
 
 
 .spa {
