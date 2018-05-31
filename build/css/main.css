@@ -14,14 +14,14 @@ font-weight: normal;
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=cyrillic');
 @font-face {
-      font-family: 'fontello';
-      src: url('../fonts/fontello.eot?67493522');
-      src: url('../fonts/fontello.eot?67493522#iefix') format('embedded-opentype'),
-           url('../fonts/fontello.woff?67493522') format('woff'),
-           url('../fonts/fontello.ttf?67493522') format('truetype'),
-           url('../fonts/fontello.svg?67493522#fontello') format('svg');
-      font-weight: normal;
-      font-style: normal;
+	font-family: 'fontello';
+	src: url('../fonts/fontello.eot?67493522');
+	src: url('../fonts/fontello.eot?67493522#iefix') format('embedded-opentype'),
+	url('../fonts/fontello.woff?67493522') format('woff'),
+	url('../fonts/fontello.ttf?67493522') format('truetype'),
+	url('../fonts/fontello.svg?67493522#fontello') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 
@@ -34,13 +34,14 @@ body, html {
 }
 
 h3 {
-		padding: 0;
+	padding: 0;
 	margin: 0;
+	line-height: 1.2em;
 }
 
 .container {
-	 border-left: 1px solid #000;
-	border-right: 1px solid #000; 
+	/*   border-left: 1px solid #000;
+	border-right: 1px solid #000;   */
 	padding-right: 0;
 	padding-left: 0;
 }
@@ -50,7 +51,7 @@ h3 {
 }
 
 .menu-top {
- 	padding-top: 10px;
+	padding-top: 10px;
 	padding-bottom: 14px; 
 	color: #6b737a;
 }
@@ -83,8 +84,8 @@ h3 {
 .vk a::before {
 	content:'';
 	float: left;
- margin: 0 10px 0 0;
-/*  position: absolute; */
+	margin: 0 10px 0 0;
+	/*  position: absolute; */
 	background: url(../img/icon-vk.png) no-repeat;
 	width: 24px;
 	height: 24px;
@@ -96,7 +97,7 @@ h3 {
 .wrap-logo {
 	padding-top: 18px;
 	padding-bottom: 25px;
-		display:flex;
+	display:flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
@@ -111,7 +112,7 @@ h3 {
 .schema span::before {
 	content:'';
 	float: left; 
- 	margin: 0 10px 0 0;
+	margin: 0 10px 0 0;
 	/* position: absolute; */
 	background: url(../img/icon-scheme.png) no-repeat;
 	width: 29px;
@@ -147,9 +148,6 @@ h3 {
 	background: linear-gradient(to bottom, #06356d, #168ce4);
 }
 
-
-
-
 .order a, .order a:hover, .order a:active, .order a:visited {
 	color: #fff;
 	text-decoration: none;
@@ -180,7 +178,7 @@ h3 {
 .menu-nav a, .menu-nav a:hover, .menu-nav a:visited {
 	color: #fff;
 	text-decoration: none;
- 	line-height: 45px;
+	line-height: 45px;
 	padding-left: 30px;
 	padding-right: 30px;
 
@@ -220,9 +218,9 @@ h3 {
 
 .header__block {
 	color: #626262;
-	padding-top: 60px;
+	padding-top: 30px;
 	text-align: center;
-	margin-bottom: 70px;
+	padding-bottom: 30px;
 }
 
 .title__block {
@@ -249,6 +247,7 @@ h3 {
 .halls {
 	background-color: #efefef;
 	padding-bottom: 50px;
+	padding-top: 30px;
 }
 
 .halls-header {
@@ -291,17 +290,17 @@ h3 {
 }
 
 .icon {
-    font-family: "fontello";
-    font-style: normal;
-    font-weight: normal;
-    speak: none;     
-    text-decoration: inherit;
-    text-align: center;
-    font-variant: normal;
-    text-transform: none;   
-    /* Font smoothing. That was taken from TWBS */
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
+	font-family: "fontello";
+	font-style: normal;
+	font-weight: normal;
+	speak: none;     
+	text-decoration: inherit;
+	text-align: center;
+	font-variant: normal;
+	text-transform: none;   
+	/* Font smoothing. That was taken from TWBS */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .halls-item-info, .pool-item-info  {
@@ -362,6 +361,7 @@ h3 {
 	text-align: left;
 }
 .pool {
+	padding-top: 30px;
 	padding-bottom: 50px;
 }
 
@@ -373,19 +373,35 @@ h3 {
 
 
 .spa {
+	padding-top: 30px;
 	min-height: 530px;
 	background-color: #efefef;
 
 }
 .testing{
+	padding-top: 30px;
 	min-height: 310px;
 
 }
 .about{
-	min-height: 550px;
+	padding-top: 30px;
+	padding-bottom: 50px;
 	background-color: #efefef;
 
 }
+
+.about__description {
+	font-size: 24px;
+	color: #3c3c3b;
+	text-align: center;
+	padding-bottom: 40px;
+
+}
+
+.about__description_bold{
+	font-weight: 700;
+}
+
 .contacts{
 	min-height: 310px;
 
@@ -407,6 +423,6 @@ font-family: 'Open Sans', sans-serif;
 
 
 
- 	@media (min-width:1200px){
- 		.container{max-width:1170px}
- 	}
+@media (min-width:1200px){
+	.container{max-width:1170px}
+}
