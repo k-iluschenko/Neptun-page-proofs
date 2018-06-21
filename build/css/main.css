@@ -404,10 +404,30 @@ h3 {
 
 .contacts{
 	min-height: 310px;
+		padding-top: 30px;
+	padding-bottom: 50px;
 
+}
+
+.contacts__icon {
+}
+
+.contacts__item {
+	vertical-align: top;
+}
+
+.www {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
 }
 .map{
 	min-height: 625px;
+	background: url(../img/map.jpg) no-repeat 50% 50%;
 
 }
 .footer{
